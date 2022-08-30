@@ -34,7 +34,7 @@ download_release() {
   version="$1"
   filename="$2"
 
-  url="$GH_REPO/release/download/v${version}/ghorg_${version}_$(uname)_$(uname -m).tar.gz"
+  url="$GH_REPO/releases/download/v${version}/ghorg_${version}_$(uname)_$(uname -m).tar.gz"
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
