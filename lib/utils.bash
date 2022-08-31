@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
-set -x
 
 # TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for ghorg.
 GH_REPO="https://github.com/gabrie30/ghorg"
